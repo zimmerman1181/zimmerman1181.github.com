@@ -1,0 +1,4 @@
+User-agent: *
+Disallow: 
+
+Sitemap: http://zimmerman1181.github.com/sitemap.xml 
