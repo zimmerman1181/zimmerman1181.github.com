@@ -1,16 +1,25 @@
 <?xml version="1.0" encoding="utf-8"?>
 <feed xmlns="http://www.w3.org/2005/Atom">
 
-  <title><![CDATA[My Octopress Blog]]></title>
-  <link href="http://zimmerman1181.github.com/atom.xml" rel="self"/>
-  <link href="http://zimmerman1181.github.com/"/>
-  <updated>2013-02-21T11:05:20-05:00</updated>
-  <id>http://zimmerman1181.github.com/</id>
+  <title><![CDATA[Yancy Zimmerman]]></title>
+  <link href="http://test.yancyzimmerman.com/atom.xml" rel="self"/>
+  <link href="http://test.yancyzimmerman.com/"/>
+  <updated>2013-02-21T20:35:50-05:00</updated>
+  <id>http://test.yancyzimmerman.com/</id>
   <author>
-    <name><![CDATA[Your Name]]></name>
+    <name><![CDATA[Yancy Zimmerman]]></name>
     
   </author>
   <generator uri="http://octopress.org/">Octopress</generator>
 
+  
+  <entry>
+    <title type="html"><![CDATA[Hello World]]></title>
+    <link href="http://test.yancyzimmerman.com/blog/2013/02/21/hello-world/"/>
+    <updated>2013-02-21T14:56:00-05:00</updated>
+    <id>http://test.yancyzimmerman.com/blog/2013/02/21/hello-world</id>
+    <content type="html"><![CDATA[
+]]></content>
+  </entry>
   
 </feed>
