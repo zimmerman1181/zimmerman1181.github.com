@@ -5,17 +5,113 @@
 //$header-padding-top: 1.5em;
 //$header-padding-bottom: 1.5em;
 
-//$max-width: 1350px;
+$max-width: 850px;
 //$indented-lists: true;
 
 // Padding used for layout margins
-//$pad-min: 18px;
-//$pad-narrow: 25px;
-//$pad-medium: 35px;
-//$pad-wide: 55px;
+$pad-min: 18px;
+$pad-narrow: 25px;
+$pad-medium: 35px;
+$pad-wide: 55px;
 
 // Sidebar widths used in media queries
 //$sidebar-width-medium: 240px;
 //$sidebar-pad-medium: 15px;
 //$sidebar-pad-wide: 20px;
 //$sidebar-width-wide: 300px;
+
+// Padding reset (had to switch the default amount to Margin and zero out the Padding to get what I wanted.
+
+body > nav, footer {
+    @extend .group;
+    margin-left: $pad-min;
+    margin-right: $pad-min;
+    padding-left: 0px;
+    padding-right: 0px;
+    @media only screen and (min-width: 480px) {
+      margin-left: $pad-narrow;
+      margin-right: $pad-narrow;
+      padding-left: 0px;
+      padding-right: 0px;
+    }
+    @media only screen and (min-width: 768px) {
+      margin-left: $pad-medium;
+      margin-right: $pad-medium;
+      padding-left: 0px;
+      padding-right: 0px;
+    }
+    @media only screen and (min-width: 992px) {
+      margin-left: $pad-wide;
+      margin-right: $pad-wide;
+      padding-left: 0px;
+      padding-right: 0px;
+    }
+  }
+ 
+// Trying to clean up the extra horizontal line that was appearing between the footer and content
+   
+  body.collapse-sidebar.sidebar-footer > div#main > div#content > aside.sidebar {
+    @extend .group;
+    margin-left: $pad-min;
+    margin-right: $pad-min;
+    padding-left: 0px;
+    padding-right: 0px;
+    @media only screen and (min-width: 480px) {
+      margin-left: $pad-narrow;
+      margin-right: $pad-narrow;
+      padding-left: 0px;
+      padding-right: 0px;
+    }
+    @media only screen and (min-width: 768px) {
+      margin-left: $pad-medium;
+      margin-right: $pad-medium;
+      padding-left: 0px;
+      padding-right: 0px;
+    }
+    @media only screen and (min-width: 992px) {
+      margin-left: $pad-wide;
+      margin-right: $pad-wide;
+      padding-left: 0px;
+      padding-right: 0px;
+    }
+  }
+
+// After messing with the nav above, it messed up the "Posted by" footer at the bottom of individual posts. This fixes it.
+  
+  article > footer {
+    @extend .group;
+    margin-left: 0px;
+    margin-right: 0px;
+    padding-left: 0px;
+    padding-right: 0px;
+    @media only screen and (min-width: 480px) {
+      margin-left: 0px;
+      margin-right: 0px;
+      padding-left: 0px;
+      padding-right: 0px;
+    }
+    @media only screen and (min-width: 768px) {
+      margin-left: 0px;
+      margin-right: 0px;
+      padding-left: 0px;
+      padding-right: 0px;
+    }
+    @media only screen and (min-width: 992px) {
+      margin-left: 0px;
+      margin-right: 0px;
+      padding-left: 0px;
+      padding-right: 0px;
+    }   
+  }
+  
+// Search Form - trying to fix the text so that the cursor doesn't show up so low in the form field
+
+form#search > fieldset > input.search {
+  padding-top: 0.3em;
+  padding-right: 0.5em;
+  padding-bottom: 0.3em;
+  padding-left: 0.5em;
+}
+  
+  
+  

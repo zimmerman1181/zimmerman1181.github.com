@@ -3,7 +3,7 @@ layout: page
 title: "about"
 comments: false
 sharing: true
-footer: true
+footer: false
 ---
 
 ### This is the about page.

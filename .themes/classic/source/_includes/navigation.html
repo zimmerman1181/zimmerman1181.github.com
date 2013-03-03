@@ -4,9 +4,7 @@
     <li><a href="{{ site.subscribe_email }}" rel="subscribe-email" title="subscribe via email">Email</a></li>
   {% endif %}
 </ul>
-  {% if site.simple_search %}
 <form method="get" action="{{ root_url }}/search.html" id="search">
     <input name="query" type="text" style="margin-top:20px;" size="40" placeholder="Search..." x-webkit-speech />
 </form>
-  {% endif %}
 {% include custom/navigation.html %}
